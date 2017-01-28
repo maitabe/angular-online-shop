@@ -19,7 +19,8 @@ app.use(express.static('node_modules'));
 app.use('/users', users);*/
 
 app.get('/products', function(req, res, next){
-	res.send([
+	console.log('already cross');
+	res.json([
 		{
 			brand: 'zoeva',
 			name: 'brush',
