@@ -1,7 +1,3 @@
-app.controller('mainCtrl', ['$scope', 'shopService', function($scope, shopService) {
-
-	$scope.test = shopService.getProducts();
-
-
+app.controller('mainCtrl', ['$scope', function($scope) {
 
 }]);

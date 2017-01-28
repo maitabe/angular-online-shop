@@ -1,0 +1,40 @@
+<div class="row">
+      <aside class="col-md-4">
+      <div class="well">
+        <h4>Search</h4>
+        <div class="input-group">
+            <input type="text" class="form-control">
+            <span class="input-group-btn">
+              <a href="#" class="btn btn-default">
+                <span class="glyphicon glyphicon-search"></span>
+            </a>
+            </span>
+        </div>
+      </div>
+      <div class="well">
+        <h4>Filter</h4>
+        <hr>
+        <h4><small class="glyphicon glyphicon-tag"></small> Category</h4>
+        <div class="list-group">
+            <!-- ngRepeat: category in categories -->
+            <a href="#/posts?category=javascript" class="list-group-item ng-binding ng-scope" ng-class="{active: isSelected(category.text,'category')}" ng-repeat="category in categories ">
+              <span class="badge ng-binding">6</span>
+              JavaScript
+            </a><!-- end ngRepeat: category in categories -->
+
+          </div>
+      </div>
+      </aside>
+      <section class="col-md-8">
+        <h1 class="page-header">Display Products</h1>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="product-container" ng-repeat="prod in products">
+              <div>{{prod.brand}}</div>
+              <div>{{prod.name}}</div>
+              <div>{{prod.price}}</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>

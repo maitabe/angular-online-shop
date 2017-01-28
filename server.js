@@ -28,6 +28,22 @@ app.get('/products', function(req, res, next){
 			likes: 0,
 			image:'url',
 			productType: 'something'
+		},
+		{
+			brand: 'artdeco',
+			name: 'Eyeshadow Blending Brush',
+			price: 17,
+			likes: 0,
+			image:'url',
+			productType: 'something'
+		},
+		{
+			brand: 'japoneske',
+			name: 'concealer',
+			price: 9.40,
+			likes: 0,
+			image:'url',
+			productType: 'something'
 		}
 	]);
 });
