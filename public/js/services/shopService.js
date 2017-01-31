@@ -10,9 +10,9 @@ app.factory('shopService', ['$http','$q', function($http,$q) {
 				console.log(products.data);
 				angular.copy(products.data, shopService.products);
 			});
-		},
+		}
 		//promises
-		getProducts2: function(){
+		/*getProducts2: function(){
 			var deferred = $q.defer();
 			// check if products is empty then populated from server
 			if(this.products.length === 0)
@@ -36,13 +36,7 @@ app.factory('shopService', ['$http','$q', function($http,$q) {
 		getPro: function(){
 			console.log('getPro (sync func)');
 			return true;
-		},
-			getProducts3: function(){
-			 return $http.get('/products').then(function(products){
-				console.log('inner then');
-				});
-
-		}
+		}*/
 	};
 
 	return shopService;

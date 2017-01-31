@@ -13,7 +13,12 @@ app.config([
 		.state('products', {
 			url: '/products',
 			templateUrl: 'templates/products.html',
-			controller: 'productCtrl'
+			controller: 'productCtrl',
+			resolve: {
+				postPromise: ['shopService', function(shopService){
+					return shopService.getProducts();
+				}]
+			}
 		})
 		.state('about', {
 			url:'/about',

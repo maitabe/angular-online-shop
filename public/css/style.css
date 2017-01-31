@@ -3,7 +3,39 @@ body {
 
 }
 
-.sides {
-    margin-right: 20px;
-    margin-left: 50px;
+.product-box {
+	margin-left: 10%;
+	margin-right: 10%;
 }
+
+.thumbnail .caption {
+    text-align: center;
+}
+
+.thumbnail .imgBox {
+    height: 180px;
+    width: 100%;
+    display: block;
+    background-color: #e1e1e8;
+}
+
+.name-prod {
+	font-size: 1.20rem;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.brand-prod {
+	color: #777;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.price-prod {
+    font-size: 16px;
+    font-weight: 700;
+    /* margin: 0 auto .5em; */
+    position: relative;
+}
+

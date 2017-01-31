@@ -1,5 +1,7 @@
-<div class="row">
-      <aside class="col-md-4">
+<div class="product-box">
+  <div class="row">
+    <div class="col-xs-4 col-md-3">
+    <aside >
       <div class="well">
         <h4>Search</h4>
         <div class="input-group">
@@ -16,25 +18,41 @@
         <hr>
         <h4><small class="glyphicon glyphicon-tag"></small> Category</h4>
         <div class="list-group">
-            <!-- ngRepeat: category in categories -->
+
             <a href="#/posts?category=javascript" class="list-group-item ng-binding ng-scope" ng-class="{active: isSelected(category.text,'category')}" ng-repeat="category in categories ">
               <span class="badge ng-binding">6</span>
               JavaScript
-            </a><!-- end ngRepeat: category in categories -->
+            </a>
 
           </div>
       </div>
       </aside>
-      <section class="col-md-8">
+    </div>
+    <div class="col-xs-14 col-sm-6 col-md-9">
+      <section>
+
         <h1 class="page-header">Display Products</h1>
         <div class="row">
-          <div class="col-md-4">
-            <div class="product-container" ng-repeat="prod in products">
-              <div>{{prod.brand}}</div>
-              <div>{{prod.name}}</div>
-              <div>{{prod.price}}</div>
+          <div class="col-sm-6 col-md-3 product-container" ng-repeat="prod in products">
+            <div class="thumbnail">
+              <img src=" " alt="..." class="imgBox">
+              <div class="caption">
+                <p class="name-prod">{{prod.name}}</p>
+                <p class="brand-prod">{{prod.brand}}</p>
+                <p class="price-prod"> $ {{prod.price}}</p>
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <!-- <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p> -->
+              </div>
             </div>
           </div>
         </div>
       </section>
+
     </div>
+  </div>
+</div>
+
+<!-- <div class="row">
+
+
+</div> -->

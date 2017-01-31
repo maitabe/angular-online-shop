@@ -1,5 +1,7 @@
 app.controller('productCtrl', ['$scope', 'shopService', function($scope, shopService) {
 
+	$scope.products = shopService.products;
+
 	// get data without cache stright from server
 	// shopService.getProducts().then(function(data){
 	// 	console.log(data.data);
@@ -7,9 +9,9 @@ app.controller('productCtrl', ['$scope', 'shopService', function($scope, shopSer
 	// });
 
 	// get products - maybe cached in service
-	shopService.getProducts2().then(function(){
+	/*shopService.getProducts2().then(function(){
 		$scope.products = shopService.products;
-	});
+	});*/
 
 console.log('after getPro');
 
